@@ -23,7 +23,7 @@ code {
   width: 400px;
   min-width: 400px;
   min-height: 400px;
-  background-color: #bbb;
+  background-color: #40E0D0;
 }
 
 .row {
@@ -35,15 +35,15 @@ code {
 }
 
 .cell {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 #colorSelector {
   top: 0;
   margin: 0 0 15px 0;
-  height: 80px;
-  background-color: #bbb;
+  height: 100px;
+  background-color: #40E0D0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +53,7 @@ code {
 
 .color-swatch {
   border: 1px solid #999;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin: 0 2%;
 }
