@@ -1,20 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
-function NavBar(props){
-  const colors = {
-    black: 'navbar-inverse',
-    white: 'navbar-default'
-  }
-  
+const NavBar = () => {
   return (
-    <nav className={`navbar ${colors[props.color]}`}>
-      <div className='container-fluid'>
-        <div className='navbar-header'>
-        
-        </div>
-      </div>
-    </nav>
-  )
-}
+    <div className="navbar">
+      <NavLink exact to="/">Home</NavLink>
+      <NavLink to="/drawing">🖍</NavLink>
+      <NavLink to="/giphy">🤪</NavLink>
+    </div>
+  );
+};
 
-export default NavBar
+
+export default NavBar;
