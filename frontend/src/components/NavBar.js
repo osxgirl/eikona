@@ -2,14 +2,13 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
-  return (
-    <div className="navbar">
-      <NavLink exact to="/">Home</NavLink>
-      <NavLink to="/drawing">🖍</NavLink>
-      <NavLink to="/giphy">🤪</NavLink>
-    </div>
-  );
+    return (
+        <div className="navbar">
+            <NavLink exact to="/"><button type="button">🏡</button></NavLink>
+            <NavLink to="/drawing"><button type="button">🖍</button></NavLink>
+            <NavLink to="/giphy"><button type="button">🤪</button></NavLink>
+          </div>
+            );
 };
 
-
-export default NavBar;
+export default NavBar
