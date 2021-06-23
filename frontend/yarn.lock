@@ -6914,6 +6914,11 @@
     "merge2" "^1.3.0"
     "slash" "^3.0.0"
 
+"goober@^2.0.37":
+  "integrity" "sha512-oGrP8xMB3k6EEcEAuKstd05r0JRFs8L9ouPCTKxupu85PdDJ443LTCXvxRVMeYN6pVhV6htVb7FaKTk5JlFzCQ=="
+  "resolved" "https://registry.npmjs.org/goober/-/goober-2.0.38.tgz"
+  "version" "2.0.38"
+
 "graceful-fs@^4.1.11", "graceful-fs@^4.1.15", "graceful-fs@^4.1.2", "graceful-fs@^4.1.6", "graceful-fs@^4.2.0", "graceful-fs@^4.2.4":
   "integrity" "sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ=="
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.6.tgz"
@@ -11175,6 +11180,16 @@
     "iconv-lite" "0.4.24"
     "unpipe" "1.0.0"
 
+"react-animated-heart@^0.0.7-alpha.1":
+  "integrity" "sha512-xcy5oWOF3rc7dt8K+g7mdMLcyRIlYWleHSI8LLqlKRD2UVFUvhcl+qNS+X36qulMS0b9Nv0+wDgkLFQWjGB7cA=="
+  "resolved" "https://registry.npmjs.org/react-animated-heart/-/react-animated-heart-0.0.7-alpha.1.tgz"
+  "version" "0.0.7-alpha.1"
+  dependencies:
+    "goober" "^2.0.37"
+    "react" "^17.0.2"
+    "react-dom" "^17.0.2"
+    "react-scripts" "4.0.3"
+
 "react-app-polyfill@^2.0.0":
   "integrity" "sha512-0sF4ny9v/B7s6aoehwze9vJNWcmCemAUYBVasscVr92+UYiEqDXOxfKjXN685mDaMRNF3WdhHQs76oTODMocFA=="
   "resolved" "https://registry.npmjs.org/react-app-polyfill/-/react-app-polyfill-2.0.0.tgz"
@@ -11373,7 +11388,7 @@
     "tiny-invariant" "^1.0.2"
     "tiny-warning" "^1.0.0"
 
-"react-scripts@^4.0.3":
+"react-scripts@^4.0.3", "react-scripts@4.0.3":
   "integrity" "sha512-S5eO4vjUzUisvkIPB7jVsKtuH2HhWcASREYWHAQ1FP5HyCv3xgn+wpILAEWkmy+A+tTNbSZClhxjT3qz6g4L1A=="
   "resolved" "https://registry.npmjs.org/react-scripts/-/react-scripts-4.0.3.tgz"
   "version" "4.0.3"

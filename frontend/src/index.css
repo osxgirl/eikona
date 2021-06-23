@@ -61,9 +61,12 @@ code {
 h1 {
   color: white;
   text-align: center;
+  font-size: 123px;
+}
+h2 {
+  text-align: center;
   font-size: 131px;
 }
-
 .navbar {
     text-align: right;
     padding: 20px;

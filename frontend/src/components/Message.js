@@ -20,8 +20,8 @@ class Message extends React.Component {
 
     render(){
         return (
-            <div className="message" id={this.props.id + "-message"}>
-                <h3>{this.props.detail}</h3>
+            <div className="message" id={this.props.id + "message"}>
+                <h3>{this.props.id}</h3>
                 <div onMouseEnter={this.switchMessage} onMouseLeave={this.switchMessage}>
                 </div>
             </div>

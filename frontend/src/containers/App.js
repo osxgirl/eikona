@@ -11,7 +11,7 @@ import MessagesContainer from './MessagesContainer';
 import MessageCard from '../components/MessageCard';
 import {fetchMessages} from '../actions/messageActions';
 import GifListContainer from '../containers/GifListContainer'
-
+import Heart from '../components/Heart';
 class App extends Component {
      
     
@@ -39,14 +39,10 @@ class App extends Component {
           <Route exact path="/messages" component={MessagesContainer} />
           <Route exact path="/drawing" component={Matrix} />
           <Route exact path="/giphy" component={GifListContainer} />
-          
+          <Route exact path="/heart" component={Heart} />
           </React.Fragment>
         </Router>
-            
-        <h1>Messages:</h1>
-        <MessageCard messageDetails={this.props.messages}/>
-                 
-            
+            <h2><Heart /></h2>
       </div>
     );
   }

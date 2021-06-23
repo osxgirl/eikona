@@ -9,8 +9,6 @@ const url ="http://localhost:3000/messages"
 
 class MessagesContainer extends React.Component{
    
-    
-
     addMessage = (messageData) => {
         this.setState((prevState, prevProps ) => {
             return {
@@ -19,9 +17,9 @@ class MessagesContainer extends React.Component{
         })
     }
 
-    makeMessagesLists(){
+    makeMessageCards(){
 
-        return this.props.message.map(message => <MessageCard increaseMessagess={this.increaseMessages} message={message} />)
+        return this.props.messages.map(message => <MessageCard increaseMessages={this.increaseMessages} messgage={message} />)
     }
 
     increaseMessages = (id) => {
@@ -52,12 +50,9 @@ class MessagesContainer extends React.Component{
     componentDidMount(){
      
       console.log("A")
-      this.props.fetchMessges()
+      this.props.fetchMessages()
       console.log("D")
     }
-
-   
-
 
     render(){
         return(
@@ -68,7 +63,7 @@ class MessagesContainer extends React.Component{
                     <br></br>
                 </div>
                 
-               {this.props.loading ? <h1>LOADING....</h1> : this.makeMessagesCards()}
+               {this.props.loading ? <h1>LOADING....</h1> : this.makeMessageCards()}
             </div>
         )
     }
