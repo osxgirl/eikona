@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import './index.css';
-import reportWebVitals from './reportWebVitals';
 import App from './containers/App';
+import messagesReducer from './reducers/messagesReducer.js';
+import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render (
-  <App />,
+const store = createStore(messagesReducer, applyMiddleware(thunk))
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
                 

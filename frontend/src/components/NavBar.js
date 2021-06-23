@@ -7,6 +7,7 @@ const NavBar = () => {
             <NavLink exact to="/"><button type="button">🏡</button></NavLink>
             <NavLink to="/drawing"><button type="button">🖍</button></NavLink>
             <NavLink to="/giphy"><button type="button">🤪</button></NavLink>
+            <NavLink to="/messages"><button type="messages">💬</button></NavLink>
           </div>
             );
 };
