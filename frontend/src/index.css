@@ -89,3 +89,14 @@ button {
      margin-right: 23px;
 }
 
+#clock {
+  text-align: center;
+  line-height: 100px;
+  font-size: 300%;
+  height: 100px;
+}
+
+ul {
+    list-style: none;
+}
+

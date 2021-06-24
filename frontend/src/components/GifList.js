@@ -10,7 +10,6 @@ export default class GifList extends Component {
     return(
       <ul>
         <li>{this.gifs}</li>
-
       </ul>
     )
   }
