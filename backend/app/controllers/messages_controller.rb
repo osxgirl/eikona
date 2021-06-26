@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
   def create
     message = Message.new(messsage_params)
          if message.save
-             render json: MessageSerializer.new(comment, include: [:user])
+             render json: MessageSerializer.new(message)
          else
              render json: {error: "could not save"}
          end
@@ -16,7 +16,7 @@ class MessagesController < ApplicationController
 
   def show
     message = Message.find(params[:id])
-    render json: message.to_json(except: [:created_at, :updated_at], include: {user: {only: [:name]}})
+    render json: message.to_json(except: [:created_at, :updated_at])
   end
 
   def update
@@ -36,7 +36,7 @@ class MessagesController < ApplicationController
 
   private
   def message_params
-      params.require(:message).permit(:message, :user_id)
+      params.require(:message)
   end
   
 end
