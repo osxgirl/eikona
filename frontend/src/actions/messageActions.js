@@ -13,8 +13,8 @@ export const fetchMessages = () => {
         .then(res => res.json())
         .then(json => {
            
-          dispatch(setMessages(json))
-          console.log("F")
+        dispatch(setMessages(json))
+        console.log("F")
         })
         console.log("C")
     }

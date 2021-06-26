@@ -2,16 +2,25 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route
-} from 'react-router-dom';
+} from 'react-router-dom'
 import NavBar from './components/NavBar'
-import Home from './components/Home';
+import Home from './components/Home'
 import Matrix from './components/Matrix.js'
-import MessagesContainer from './containers/MessagesContainer';
+import MessagesContainer from './containers/MessagesContainer'
 import GifListContainer from './containers/GifListContainer'
-import Heart from './components/Heart';
+import Heart from './components/Heart'
 
 
 class App extends Component {
+    state = {
+       search: ""
+     }
+
+     handleInputChange = (e) => {
+       const search = e.target.value
+       this.setState({search: search})
+     }
+
 
   render() {
     return (

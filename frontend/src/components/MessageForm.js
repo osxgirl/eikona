@@ -10,21 +10,20 @@ class MessageForm extends React.Component{
     }
 
     handleFormChange = (e) => {
-        const name = e.target.name
+        const detail = e.target.detail
         const value = e.target.value
 
         this.setState({
-            [name]: value
+            [detail]: value
         }, () => console.log(this.state))
     }
 
     handleSubmit = (e) => {
         e.preventDefault()
        
-        const message = {...this.state, likes: 0}
+        const message = {...this.state}
         
         this.props.createMessage(message)
-        // save to our current state of toys
         this.setState({
           detail: ""
         })
@@ -34,7 +33,7 @@ class MessageForm extends React.Component{
         return(
             <form onSubmit={this.handleSubmit}>
                 <label>💬</label>
-                <input type="text" detail="detail" onChange={this.handleFormChange} value={this.state.name}/>
+                <input type="text" detail="detail" onChange={this.handleFormChange} value={this.state.detail}/>
                 <input type="submit" value="Add Message" />
             </form>
         )
