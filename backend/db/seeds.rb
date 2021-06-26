@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-messages = Messages.create([{ detail: 'जी शुक्रिया ❤️'}])
-messages = Messages.create([{ detail: 'thank you ❤️'}])
-messages = Messages.create([{ detail: 'gracias ❤️'}])
-messages = Messages.create([{ detail: 'danke ❤️'}])
-messages = Messages.create([{ detail: 'merci ❤️'}])
+messages = Message.create([{ detail: 'जी शुक्रिया ❤️'}])
+messages = Message.create([{ detail: 'thank you ❤️'}])
+messages = Message.create([{ detail: 'gracias ❤️'}])
+messages = Message.create([{ detail: 'danke ❤️'}])
+messages = Message.create([{ detail: 'merci ❤️'}])
