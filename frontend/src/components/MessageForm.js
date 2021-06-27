@@ -10,7 +10,7 @@ class MessageForm extends React.Component{
         detail: ""
     }
 
-    handleInputChange = (e) => {
+    handleValueChange = (e) => {
         const detail = e.target.detail
         const value = e.target.value
 
@@ -33,9 +33,11 @@ class MessageForm extends React.Component{
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                <label><Emoji symbol="💬" label="messages" /></label>
-                <input type="text" detail="detail" onChange={this.handleInputChange} value={this.state.detail}/>
-                <input type="submit" value="Add Message" />
+                <label>
+                   <Emoji symbol="💬" label="messages" />
+                   <input type="text" value={this.state.value} onChange={this.handleChange}/>
+               </label>
+               <input type="submit" value="Add Message" />
             </form>
         )
     }

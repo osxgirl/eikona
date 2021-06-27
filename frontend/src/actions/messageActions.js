@@ -1,4 +1,4 @@
-const url = "http://localhost:3000"
+const url = "http://localhost:3000/api/v1/messages/index"
 
 export const addMessage = (message) => ({ type: "ADDED_MESSAGE", payload: message });
 export const setMessages = (messages) => ({type: "GOT_MESSAGES", payload: messages})
@@ -18,7 +18,6 @@ export const fetchMessages = () => {
 }
 //crud
 export const createMessage = (message) => {
-    console.log("B")
    return (dispatch) => {
         const configObj = {
             method: 'POST',
