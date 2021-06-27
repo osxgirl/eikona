@@ -9,22 +9,15 @@ import Matrix from './components/Matrix.js'
 import MessagesContainer from './containers/MessagesContainer'
 import GifListContainer from './containers/GifListContainer'
 import Heart from './components/Heart'
-
+import Emoji from 'a11y-react-emoji'
 
 class App extends Component {
-    state = {
-       search: ""
-     }
-
-     handleInputChange = (e) => {
-       const search = e.target.value
-       this.setState({search: search})
-     }
-
 
   render() {
     return (
       <div className="App">
+        <h1>eikóna • εικόνα<Emoji symbol="💬" label="message" /><Emoji symbol="🌺" label="flower" /><Emoji symbol="❤️" label="heart" /></h1>
+        <MessagesContainer  />
         <Router>
           <React.Fragment>
           <NavBar />

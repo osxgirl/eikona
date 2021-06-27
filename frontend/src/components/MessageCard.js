@@ -1,9 +1,9 @@
+import React from 'react';
 function MessageCard(props){
 
 
     return(
-        <div class="card" id={`message-${props.message.id}`}>
-            <h2>{props.message.detail}</h2>
+        <div className ="card" id={`message-${props.message.detail}`}><h2>Card</h2>
         </div>
     )
 }

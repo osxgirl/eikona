@@ -4,43 +4,47 @@ import MessageForm from '../components/MessageForm'
 import {connect} from 'react-redux'
 import {fetchMessages}  from '../actions/messageActions'
 
-
 class MessagesContainer extends React.Component{
-    
+   
     addMessage = (messageData) => {
-       this.setState((prevState, prevProps ) => {
+      this.setState((prevState, prevProps ) => {
             return {
                 messages: [...prevState.messages, messageData]
             }
         })
     }
-    makeMessageCards(){
-        return (
-               <MessageCard message={this.props.messages}/>)
-                }
+    makeToyCards(){
+        return this.props.messages.map(message => <MessageCard message={message} />)
+    }
 
     componentDidMount(){
-      console.log("A")
-      this.props.fetchMessages()
-      console.log("D")
+        console.log("A")
+        this.props.fetchMessages()
+        console.log("D")
     }
 
     render(){
         return(
             <div id="message-container">
+        
                 <div>
-                 <MessageForm addMessage={this.addMessage}/>
-                <br></br>
+                    <MessageForm addMessage={this.addMessage}/>
+                    <br></br>
                 </div>
+                
                {this.props.loading ? <h1>LOADING....</h1> : this.makeMessageCards()}
             </div>
         )
     }
 }
-const mapStateToProps = state => ({
-        messages: state.messages
-        })
-               
+
+const mapStateToProps = (state) => {
+        
+    return {
+     loading: state.loading
+    }
+}
+
 const mapDispatchToProps = (dispatch) => {
     return {
         fetchMessages: () => dispatch(fetchMessages())
