@@ -15,8 +15,9 @@ class MessagesContainer extends React.Component{
         })
     }
     makeMessageCards(){
-        return this.props.messages.map(message => <MessageCard message={message} />)
-    }
+        return (
+               <MessageCard message={this.props.messages}/>)
+                }
 
     componentDidMount(){
       console.log("A")
