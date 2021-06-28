@@ -3318,3 +3318,1563 @@ Processing by MessagesController#index as */*
 Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1481)
 
 
+Started GET "/" for ::1 at 2021-06-27 10:06:22 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 4.8ms | ActiveRecord: 1.1ms | Allocations: 4453)
+
+
+Started GET "/" for ::1 at 2021-06-27 10:18:36 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 4.9ms | ActiveRecord: 1.2ms | Allocations: 4453)
+
+
+Started GET "/" for ::1 at 2021-06-27 10:20:16 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1309)
+
+
+Started GET "/" for ::1 at 2021-06-27 11:34:05 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 6.2ms | ActiveRecord: 2.9ms | Allocations: 4453)
+
+
+Started GET "/" for ::1 at 2021-06-27 11:47:25 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 4.8ms | ActiveRecord: 1.2ms | Allocations: 4449)
+
+
+Started GET "/static/js/bundle.js" for ::1 at 2021-06-27 11:47:25 -0400
+Started GET "/static/js/main.chunk.js" for ::1 at 2021-06-27 11:47:25 -0400
+Started GET "/static/js/vendors~main.chunk.js" for ::1 at 2021-06-27 11:47:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/bundle.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/main.chunk.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/vendors~main.chunk.js"):
+  
+Started GET "/api/vi/messages" for ::1 at 2021-06-27 11:47:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/vi/messages"):
+  
+Started GET "/api/messages" for ::1 at 2021-06-27 11:48:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/messages"):
+  
+Started GET "/messages" for ::1 at 2021-06-27 11:49:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/messages"):
+  
+Started GET "/" for ::1 at 2021-06-27 11:49:49 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1472)
+
+
+Started GET "/" for ::1 at 2021-06-27 11:51:16 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1309)
+
+
+Started GET "/" for ::1 at 2021-06-27 11:55:28 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1308)
+
+
+Started GET "/" for ::1 at 2021-06-27 11:55:49 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 11:55:52 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 11:55:58 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1308)
+
+
+Started GET "/" for ::1 at 2021-06-27 12:27:19 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 5.4ms | ActiveRecord: 1.4ms | Allocations: 4453)
+
+
+Started GET "/" for ::1 at 2021-06-27 12:39:25 -0400
+Processing by MessagesController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.8ms | Allocations: 2063)
+
+
+Started GET "/" for ::1 at 2021-06-27 14:23:03 -0400
+Processing by MessagesController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 1.6ms | Allocations: 2064)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:21:25 -0400
+Processing by MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 1.9ms | Allocations: 2067)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:21:56 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.7ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:25:47 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.4ms | Allocations: 1309)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:29:17 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:30:00 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 0.5ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:30:23 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.3ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:30:36 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:34:35 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:39:15 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:39:45 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:43:04 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 4.3ms | ActiveRecord: 1.0ms | Allocations: 4453)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:44:41 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 1309)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:45:41 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.2ms | Allocations: 1353)
+
+
+Started GET "/static/js/bundle.js" for ::1 at 2021-06-27 15:45:41 -0400
+Started GET "/static/js/main.chunk.js" for ::1 at 2021-06-27 15:45:41 -0400
+Started GET "/static/js/vendors~main.chunk.js" for ::1 at 2021-06-27 15:45:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/bundle.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/vendors~main.chunk.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/main.chunk.js"):
+  
+Started GET "/" for ::1 at 2021-06-27 15:45:46 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1460)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:45:46 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.9ms | Allocations: 1294)
+
+
+Started OPTIONS "/" for ::1 at 2021-06-27 15:46:04 -0400
+Started POST "/" for ::1 at 2021-06-27 15:46:04 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2021-06-27 15:46:25 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.1ms | Allocations: 1292)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:47:40 -0400
+Started GET "/" for ::1 at 2021-06-27 15:47:40 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Processing by MessagesController#index as */*
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms | Allocations: 1582)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms | Allocations: 2205)
+
+
+Started GET "/" for ::1 at 2021-06-27 15:59:28 -0400
+Processing by MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.8ms | Allocations: 2051)
+
+
+Started GET "/" for ::1 at 2021-06-27 16:19:57 -0400
+Processing by MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 1.1ms | Allocations: 2050)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:04:07 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 5.3ms | ActiveRecord: 1.5ms | Allocations: 4453)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:07:27 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1309)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:18:58 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 5.0ms | ActiveRecord: 1.5ms | Allocations: 4453)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:19:21 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1309)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:20:18 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.5ms | Allocations: 1310)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:20:18 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1309)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:22:03 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.0ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:22:03 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1309)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:22:54 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.7ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:22:54 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1293)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:28:16 -0400
+Processing by MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 1.4ms | Allocations: 2052)
+
+
+Started OPTIONS "/" for ::1 at 2021-06-27 17:29:01 -0400
+Started POST "/" for ::1 at 2021-06-27 17:29:01 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/" for ::1 at 2021-06-27 17:29:12 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2021-06-27 17:40:21 -0400
+Processing by MessagesController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 1.2ms | Allocations: 2219)
+
+
+Started GET "/api/v1/" for ::1 at 2021-06-27 17:45:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1"):
+  
+Started GET "/api/v1/messages" for ::1 at 2021-06-27 17:45:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages"):
+  
+Started GET "/api/v1/message" for ::1 at 2021-06-27 17:45:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/message"):
+  
+Started GET "/" for ::1 at 2021-06-27 17:46:47 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 5.0ms | ActiveRecord: 1.4ms | Allocations: 4453)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 17:52:41 -0400
+Processing by Api::V1::MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.2ms | Allocations: 1175)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:59:39 -0400
+Processing by MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 1.1ms | Allocations: 2067)
+
+
+Started GET "/" for ::1 at 2021-06-27 17:59:45 -0400
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1309)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 17:59:55 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1107)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:02:38 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:03:53 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started OPTIONS "/api/v1/messages/index" for ::1 at 2021-06-27 18:04:01 -0400
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 18:04:01 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:04:13 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 1269)
+
+
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 18:04:22 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 18:04:26 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:05:00 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1082)
+
+
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 18:05:11 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:06:14 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1082)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:06:29 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:10:09 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:10:09 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:10:11 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:10:11 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:10:32 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:10:32 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:14:27 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:14:27 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1084)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:14:44 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:14:44 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:15:28 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:15:28 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:15:29 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:15:29 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 18:15:41 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 18:15:51 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages/1" for ::1 at 2021-06-27 18:16:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages/1"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:16:48 -0400
+Processing by Api::V1::MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1078)
+
+
+Started GET "/api/v1/messages/id/1" for ::1 at 2021-06-27 18:28:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages/id/1"):
+  
+Started GET "/api/v1/messages/id:1" for ::1 at 2021-06-27 18:28:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages/id:1"):
+  
+Started GET "/api/v1/messages/" for ::1 at 2021-06-27 18:28:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages"):
+  
+Started GET "/api/v1/messages" for ::1 at 2021-06-27 18:28:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:29:09 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:7:in `index'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.9ms | Allocations: 1709)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:29:09 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:29:17 -0400
+Processing by Api::V1::MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1079)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:37:12 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:7:in `index'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 3.9ms | ActiveRecord: 1.2ms | Allocations: 3120)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:46:40 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:7:in `index'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 1.1ms | Allocations: 1697)
+
+
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 18:46:44 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 18:46:46 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:46:58 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1082)
+
+
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 18:47:01 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:49:23 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1082)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:49:29 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:50:15 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:51:31 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:51:33 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:51:41 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 18:52:02 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1083)
+
+
+Started GET "/" for ::1 at 2021-06-27 18:58:51 -0400
+Processing by MessagesController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 16.1ms | Allocations: 2250)
+
+
+Started GET "/" for ::1 at 2021-06-27 18:58:52 -0400
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1289)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:00:08 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1091)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:01:23 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:01:29 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:02:33 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:02:40 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:02:56 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:02:56 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:02:59 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:02:59 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:03:07 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:03:07 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:04:10 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:04:11 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:04:45 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms | Allocations: 1084)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:07:03 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 19:07:10 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:08:36 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1082)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 19:08:38 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 20:37:01 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:7:in `index'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.7ms | Allocations: 1697)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 20:39:03 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 20:39:03 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 20:39:25 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1084)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 20:39:25 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 20:39:42 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 20:39:42 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 21:58:17 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:7:in `index'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 4.7ms | ActiveRecord: 1.4ms | Allocations: 1697)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 21:58:18 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 21:58:36 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 21:58:36 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 21:59:33 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 21:59:33 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:00:47 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:00:47 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:01:13 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:01:13 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:01:45 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:01:45 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:03:45 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:03:45 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1084)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:06:44 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:06:44 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:16:22 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:7:in `index'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 1.0ms | Allocations: 1697)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:16:48 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:16:51 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:25:02 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:7:in `index'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.8ms | Allocations: 1697)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:25:05 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:28:57 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started GET "/" for ::1 at 2021-06-27 22:34:52 -0400
+Processing by MessagesController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 1.5ms | Allocations: 2046)
+
+
+Started GET "/messages" for ::1 at 2021-06-27 22:35:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/messages"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:36:08 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1090)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:37:05 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY "messages"."detail" ASC[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1083)
+
+
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 22:39:39 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started OPTIONS "/api/v1/messages/index" for ::1 at 2021-06-27 22:42:05 -0400
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 22:42:05 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 22:42:37 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:42:48 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 1.7ms | Allocations: 3439)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:44:41 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:44:41 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 22:44:43 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 22:44:51 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started POST "/api/v1/messages/index" for ::1 at 2021-06-27 22:45:12 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:07:16 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 5.3ms | ActiveRecord: 1.4ms | Allocations: 4058)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:11:40 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.9ms | Allocations: 1071)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:11:54 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 70ms (Views: 68.5ms | ActiveRecord: 0.4ms | Allocations: 1072)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:14:12 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 1.8ms | Allocations: 3438)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:16:33 -0400
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:16:33 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 1.1ms | Allocations: 3385)
+
+
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.8ms | Allocations: 3423)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:16:39 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:19:26 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1071)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:19:26 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:19:31 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:19:43 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:28:47 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.8ms | Allocations: 1795)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:28:55 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:29:50 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:29:50 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:30:15 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:30:34 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.4ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:31:22 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:31:55 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:32:28 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:32:41 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:32:55 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:33:09 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:33:23 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.2ms | Allocations: 1056)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:33:31 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:33:53 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:34:13 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:34:18 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:34:52 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:34:55 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:35:00 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:36:11 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:36:54 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:37:15 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:37:34 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:37:36 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-27 23:37:47 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 1055)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-28 07:17:54 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 7.1ms | ActiveRecord: 1.9ms | Allocations: 4058)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-28 07:29:14 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 1.8ms | Allocations: 1810)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-28 07:29:24 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1072)
+
+
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-28 07:44:11 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages.json"):
+  
+Started GET "/api/v1messages.json" for ::1 at 2021-06-28 07:44:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1messages.json"):
+  
+Started GET "/api/v1messages.json" for ::1 at 2021-06-28 07:58:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1messages.json"):
+  
+Started GET "/api/v1messages.json" for ::1 at 2021-06-28 07:58:25 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1messages.json"):
+  
+Started GET "/api/v1messages.json" for ::1 at 2021-06-28 07:59:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1messages.json"):
+  
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-28 07:59:27 -0400
+  
+NoMethodError (undefined method `respond_to' for Api::V1::BaseController:Class):
+  
+app/controllers/api/v1/base_controller.rb:2:in `<class:BaseController>'
+app/controllers/api/v1/base_controller.rb:1:in `<main>'
+app/controllers/api/v1/messages_controller.rb:1:in `<main>'
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-28 08:00:11 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NoMethodError (undefined method `respond_to' for Api::V1::BaseController:Class):
+  
+app/controllers/api/v1/base_controller.rb:2:in `<class:BaseController>'
+app/controllers/api/v1/base_controller.rb:1:in `<main>'
+app/controllers/api/v1/messages_controller.rb:1:in `<main>'
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-28 08:05:09 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NoMethodError (undefined method `respond_to' for Api::V1::BaseController:Class):
+  
+app/controllers/api/v1/base_controller.rb:2:in `<class:BaseController>'
+app/controllers/api/v1/base_controller.rb:1:in `<main>'
+app/controllers/api/v1/messages_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2021-06-28 08:05:18 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/heather/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/heather/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.6ms | Allocations: 253)
+Completed 200 OK in 31ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 2177)
+
+
+Started GET "/messages" for ::1 at 2021-06-28 08:05:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/messages"):
+  
+Started GET "/api/v1/items.json" for ::1 at 2021-06-28 08:05:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/items.json"):
+  
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-28 08:08:24 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NoMethodError (undefined method `respond_to' for Api::V1::BaseController:Class):
+  
+app/controllers/api/v1/base_controller.rb:2:in `<class:BaseController>'
+app/controllers/api/v1/base_controller.rb:1:in `<main>'
+app/controllers/api/v1/messages_controller.rb:1:in `<main>'
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-28 08:11:05 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MessagesController#index as JSON
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 5.9ms | ActiveRecord: 1.5ms | Allocations: 6297)
+
+

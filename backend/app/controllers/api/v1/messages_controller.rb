@@ -1,66 +1,27 @@
-class Api::V1::MessagesController < ApplicationController
+class Api::V1::MessagesController < Api::V1::BaseController
      before_action :set_message, only: [:show, :edit, :update, :destroy]
 
-      # GET /messages
-      # GET /messages.json
-      def index
-        @messages = Message.all.order(detail: :asc)
-        render json: @messages
-      end
-
-      # GET /messages/1
-      # GET /messages/1.json
-      def show
-        if @message
-          render json: @message
-        else
-          render json: @message.errors
-        end
-      end
-
-      # GET /messages/new
-      def new
-        @message = Message.new
-      end
-
-      # GET /messages/1/edit
-      def edit
-      end
-
-      # POST /beers
-      # POST /beers.json
-      def create
-        @message = Message.new(message_params)
-
-
-        if @message.save
-          render json: @message
-        else
-          render json: @message.errors
-        end
-      end
-
-      # PATCH/PUT /messages/1
-      # PATCH/PUT /messages/1.json
-      def update
-      end
-
-      # DELETE /messages/1
-      # DELETE /messages/1.json
-      def destroy
-        @message.destroy
-
-        render json: { notice: 'Message was successfully removed.' }
-      end
-
-      private
-        # Use callbacks to share common setup or constraints between actions.
-        def set_message
-          @message = Message.find(params[:id])
+     def index
+          respond_with Message.all
         end
 
-        # Only allow a list of trusted parameters through.
+        def create
+          respond_with :api, :v1, Message.create(message_params)
+        end
+
+        def destroy
+          respond_with Message.destroy(params[:id])
+        end
+
+        def update
+          message = Message.find(params["id"])
+          message.update_attributes(message_params)
+          respond_with message, json: message
+        end
+
+        private
+
         def message_params
-          params.permit(:detail)
+          params.require(:message).permit(:id, :detail)
         end
-    end
+      end
