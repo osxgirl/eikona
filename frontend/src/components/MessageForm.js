@@ -35,7 +35,7 @@ class MessageForm extends React.Component{
             <form onSubmit={this.handleSubmit}>
                 <label>
                    <Emoji symbol="💬" label="messages" />
-                   <input type="text" value={this.state.value} onChange={this.handleChange}/>
+                   <input type="text" value={this.state.value} onChange={this.handleValueChange}/>
                </label>
                <input type="submit" value="Add Message" />
             </form>

@@ -33,6 +33,5 @@ export const createMessage = (message) => {
             dispatch(addMessage(json))
             console.log("F")
         })
-       console.log("C")
     }
 }

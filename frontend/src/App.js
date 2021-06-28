@@ -16,8 +16,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>eikóna • εικόνα<Emoji symbol="💬" label="message" /><Emoji symbol="🌺" label="flower" /><Emoji symbol="❤️" label="heart" /></h1>
-        <MessagesContainer  />
         <Router>
           <React.Fragment>
           <NavBar />
@@ -28,6 +26,7 @@ class App extends Component {
           <Route exact path="/heart" component={Heart} />
           </React.Fragment>
         </Router>
+        <h2><Emoji symbol="🌺" label="flower" /><Emoji symbol="❤️" label="heart" /></h2>
         <h2><Heart /></h2>
       </div>
     );

@@ -13,7 +13,7 @@ class MessagesContainer extends React.Component{
             }
         })
     }
-    makeToyCards(){
+    makeMessageCards(){
         return this.props.messages.map(message => <MessageCard message={message} />)
     }
 
@@ -23,19 +23,16 @@ class MessagesContainer extends React.Component{
         console.log("D")
     }
 
-    render(){
-        return(
+    render()
+        {
+          return(
             <div id="message-container">
-        
-                <div>
-                    <MessageForm addMessage={this.addMessage}/>
-                    <br></br>
-                </div>
-                
-               {this.props.loading ? <h1>LOADING....</h1> : this.makeMessageCards()}
+              <MessageForm addMessage={this.addMessage}/>
+                <br></br>
+              {this.props.loading ? <h1>LOADING....</h1> : this.makeMessageCards()}
             </div>
-        )
-    }
+          )
+        }
 }
 
 const mapStateToProps = (state) => {
