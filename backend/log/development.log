@@ -4878,3 +4878,67 @@ Processing by Api::V1::MessagesController#index as JSON
 Completed 200 OK in 53ms (Views: 5.9ms | ActiveRecord: 1.5ms | Allocations: 6297)
 
 
+Started GET "/" for ::1 at 2021-06-28 14:52:55 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/heather/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/heather/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.7ms | Allocations: 354)
+Completed 200 OK in 27ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2664)
+
+
+Started GET "/" for ::1 at 2021-06-28 14:52:57 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/heather/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/heather/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 47.3ms | Allocations: 934)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms | Allocations: 1673)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-28 14:53:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages" for ::1 at 2021-06-28 14:53:34 -0400
+Processing by Api::V1::MessagesController#index as HTML
+Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.0ms | Allocations: 1019)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/api/v1/messages_controller.rb:5:in `index'
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-28 14:53:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages/index"):
+  
+Started GET "/index" for ::1 at 2021-06-28 14:53:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-28 14:54:00 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 1.3ms | Allocations: 4456)
+
+
+Started GET "/api/v1/messages/index" for ::1 at 2021-06-28 14:54:45 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/messages/index"):
+  
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-28 14:56:09 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 58ms (Views: 10.4ms | ActiveRecord: 1.8ms | Allocations: 5692)
+
+
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-28 14:56:13 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1656)
+
+
