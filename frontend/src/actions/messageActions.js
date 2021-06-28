@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api/v1/messages/index"
+const url = "http://localhost:3000/api/v1/messages.json"
 
 export const addMessage = (message) => ({ type: "ADDED_MESSAGE", payload: message });
 export const setMessages = (messages) => ({type: "GOT_MESSAGES", payload: messages})
