@@ -33,10 +33,9 @@ class MessageForm extends React.Component{
     render(){
         return(
             <form onSubmit={this.handleOnSubmit}>
-                <label><Emoji symbol="💬" label="messages" /></label>
-                   <textarea value={this.state.detail}
-                   name='detail'
-                   onChange={this.handleOnChange} />
+                <label><Emoji symbol="💬" label="messages" />
+                   <input value={this.state.detail} name='detail' onChange={this.handleOnChange} />
+               </label>
                <input type="submit" value="Add Message" />
             </form>
         )
