@@ -16,7 +16,7 @@ class MessagesContainer extends React.Component{
     makeMessageCards(){
         return this.props.messages.map(message => <MessageCard message={message} />)
     }
-
+    
     componentDidMount(){
         console.log("A")
         this.props.fetchMessages()
@@ -27,9 +27,11 @@ class MessagesContainer extends React.Component{
         {
           return(
             <div id="message-container">
-              <MessageForm addMessage={this.addMessage}/>
+              <div>
+                <MessageForm addMessage={this.addMessage}/>
                 <br></br>
-              {this.props.loading ? <h1>LOADING....</h1> : this.makeMessageCards()}
+               </div>
+               {this.props.loading ? <h1>LOADING....</h1> : this.makeMessageCards()}
             </div>
           )
         }

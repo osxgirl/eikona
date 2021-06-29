@@ -1,4 +1,5 @@
 import React from 'react'
+import uuid from 'uuid';
 import {connect} from 'react-redux'
 import {createMessage} from '../actions/messageActions'
 import Emoji from 'a11y-react-emoji'
@@ -7,10 +8,11 @@ import Emoji from 'a11y-react-emoji'
 class MessageForm extends React.Component{
 
     state = {
-        detail: ""
+        detail: "",
+        id: uuid()
     }
 
-    handleValueChange = (e) => {
+    handleOnChange = (e) => {
         const detail = e.target.detail
         const value = e.target.value
 
@@ -19,24 +21,22 @@ class MessageForm extends React.Component{
         }, () => console.log(this.state))
     }
 
-    handleSubmit = (e) => {
+    handleOnSubmit = (e) => {
         e.preventDefault()
        
         const message = {...this.state}
         
         this.props.createMessage(message)
-        this.setState({
-          detail: ""
-        })
+        this.setState({detail: "", id: uuid()})
     }
 
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                   <Emoji symbol="💬" label="messages" />
-                   <input type="text" value={this.state.value} onChange={this.handleValueChange}/>
-               </label>
+            <form onSubmit={this.handleOnSubmit}>
+                <label><Emoji symbol="💬" label="messages" /></label>
+                   <textarea value={this.state.detail}
+                   name='detail'
+                   onChange={this.handleOnChange} />
                <input type="submit" value="Add Message" />
             </form>
         )
