@@ -9,7 +9,6 @@ import Matrix from './components/Matrix.js'
 import MessagesContainer from './containers/MessagesContainer'
 import GifListContainer from './containers/GifListContainer'
 import Heart from './components/Heart'
-import Emoji from 'a11y-react-emoji'
 
 class App extends Component {
 
@@ -26,7 +25,7 @@ class App extends Component {
           <Route exact path="/heart" component={Heart} />
           </React.Fragment>
         </Router>
-        <h2><Emoji symbol="🌺" label="flower" /><Emoji symbol="❤️" label="heart" /></h2>
+
         <h2><Heart /></h2>
       </div>
     );

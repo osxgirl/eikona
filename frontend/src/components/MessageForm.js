@@ -8,36 +8,42 @@ import Emoji from 'a11y-react-emoji'
 class MessageForm extends React.Component{
 
     state = {
-        detail: "",
-        id: uuid()
+        id: uuid(),
+        detail: [],
     }
 
-    handleOnChange = (e) => {
-        const detail = e.target.detail
-        const value = e.target.value
+    handleInputChange = (event) => {
+        const detail = event.target.detail
+        const value = event.target.value
 
         this.setState({
             [detail]: value
         }, () => console.log(this.state))
     }
 
-    handleOnSubmit = (e) => {
-        e.preventDefault()
+    handleSubmit = (event) => {
+        event.preventDefault()
        
         const message = {...this.state}
         
         this.props.createMessage(message)
         this.setState({detail: "", id: uuid()})
     }
-
+    updateDetail(event) {
+       this.setState({
+         detail: event.target.value
+       });
+     }
     render(){
         return(
-            <form onSubmit={this.handleOnSubmit}>
+           <div>
+            <form onSubmit={this.handleSubmit}>
                 <label><Emoji symbol="💬" label="messages" />
-                   <input value={this.state.detail} name='detail' onChange={this.handleOnChange} />
+               <input detail='detail' type="text" placeholder=":)" value={this.state.detail}  onChange={this.updateDetail.bind(this)} />
                </label>
                <input type="submit" value="Add Message" />
             </form>
+          </div>
         )
     }
 }
