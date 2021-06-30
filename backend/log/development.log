@@ -4942,3 +4942,675 @@ Processing by Api::V1::MessagesController#index as JSON
 Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1656)
 
 
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 12:31:33 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 45ms (Views: 6.5ms | ActiveRecord: 1.3ms | Allocations: 6387)
+
+
+Started OPTIONS "/api/v1/messages" for ::1 at 2021-06-30 12:31:54 -0400
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 12:31:54 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"detail"=>"", "id"=>"02f834d2-17da-4aae-ae77-e83729eca9ea", "undefined"=>"fucking kidding", "message"=>{"id"=>"02f834d2-17da-4aae-ae77-e83729eca9ea", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (1.4ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 2], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.7ms | Allocations: 3392)
+
+
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: messages.id):
+  
+app/controllers/api/v1/messages_controller.rb:9:in `create'
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 12:31:57 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1847)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 12:32:00 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"detail"=>"", "id"=>"b843253b-512a-4707-8892-54de869ece82", "undefined"=>"l", "message"=>{"id"=>"b843253b-512a-4707-8892-54de869ece82", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 0], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 16ms (Views: 3.9ms | ActiveRecord: 2.5ms | Allocations: 4242)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 12:32:11 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1701)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 12:32:25 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"detail"=>"", "id"=>"1552d0bc-60c7-42d7-a489-e8f273596d1b", "undefined"=>",", "message"=>{"id"=>"1552d0bc-60c7-42d7-a489-e8f273596d1b", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (2.0ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 1552], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 10ms (Views: 0.4ms | ActiveRecord: 3.0ms | Allocations: 2851)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 12:32:34 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1725)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 13:18:51 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.9ms | Allocations: 2514)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 13:19:27 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1723)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 13:19:32 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"detail"=>[], "id"=>"f535e5e9-c645-445a-a15f-5226c36e4bc6", "undefined"=>"a", "message"=>{"id"=>"f535e5e9-c645-445a-a15f-5226c36e4bc6", "detail"=>[]}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+[31mUnpermitted parameter: :detail[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("id") VALUES (?)[0m  [["id", 0]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 3281)
+
+
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: messages.id):
+  
+app/controllers/api/v1/messages_controller.rb:9:in `create'
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 13:19:35 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1721)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 13:19:38 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"detail"=>[], "id"=>"9c006d37-3725-45b0-bf58-8f3a9005c6a2", "undefined"=>"fucking kidding", "message"=>{"id"=>"9c006d37-3725-45b0-bf58-8f3a9005c6a2", "detail"=>[]}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+[31mUnpermitted parameter: :detail[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("id") VALUES (?)[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 7ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 2865)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 13:20:36 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1754)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 13:20:59 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1754)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 13:21:08 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"detail"=>"", "id"=>"74a215cb-4069-4c47-8469-8b669b149edd", "undefined"=>"fucking kidding", "message"=>{"id"=>"74a215cb-4069-4c47-8469-8b669b149edd", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 74], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 19ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 2850)
+
+
+Started GET "/" for ::1 at 2021-06-30 13:22:00 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/heather/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/heather/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.9ms | Allocations: 237)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 945)
+
+
+Started GET "/messages" for ::1 at 2021-06-30 13:22:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/messages"):
+  
+Started GET "/api/vi/messages" for ::1 at 2021-06-30 13:22:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/vi/messages"):
+  
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-30 13:23:51 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2720)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20210617004532)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "messages" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "detail" varchar)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210617004532"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-30 17:26:29.654783"], ["updated_at", "2021-06-30 17:26:29.654783"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20210617004532)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "messages" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "detail" varchar)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210617004532"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-30 17:49:06.719398"], ["updated_at", "2021-06-30 17:49:06.719398"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("detail") VALUES (?)[0m  [["detail", "जी शुक्रिया ❤️"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("detail") VALUES (?)[0m  [["detail", "thank you ❤️"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("detail") VALUES (?)[0m  [["detail", "gracias ❤️"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("detail") VALUES (?)[0m  [["detail", "danke ❤️"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("detail") VALUES (?)[0m  [["detail", "merci ❤️"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:01:04 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 31ms (Views: 7.7ms | ActiveRecord: 1.4ms | Allocations: 6292)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 14:01:15 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"detail"=>"", "id"=>"ee7f9271-4804-4e58-8508-c2da7e024975", "undefined"=>"3", "message"=>{"id"=>"ee7f9271-4804-4e58-8508-c2da7e024975", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 0], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 40ms (Views: 2.2ms | ActiveRecord: 2.0ms | Allocations: 4065)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:01:26 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 1701)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:10:02 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (1.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 2.6ms | Allocations: 2483)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:11:00 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 1701)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:11:04 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:13:52 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1683)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:14:16 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:14:19 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:17:04 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 17.0ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 14:17:41 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages.json" for ::1 at 2021-06-30 14:18:40 -0400
+Processing by Api::V1::MessagesController#index as JSON
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:12:19 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 1.4ms | Allocations: 2462)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:13:15 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:13:17 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (3.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 3.9ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:17:29 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 9.8ms | ActiveRecord: 0.5ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:17:49 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:18:17 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:18:18 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 74ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1682)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:19:41 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1682)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:19:51 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:20:03 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:20:12 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:22:38 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:22:41 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 1681)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 16:22:49 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 1681)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 16:22:54 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"2c6ddd3d-3cd5-4880-8651-f234c760f7b6", "detail"=>"", "undefined"=>"l", "message"=>{"id"=>"2c6ddd3d-3cd5-4880-8651-f234c760f7b6", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 2], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms | Allocations: 3258)
+
+
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: messages.id):
+  
+app/controllers/api/v1/messages_controller.rb:9:in `create'
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 17:06:27 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 3.0ms | Allocations: 2657)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:06:31 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"e8ccda9a-7452-4180-b89b-593ee28c4ac0", "detail"=>"", "undefined"=>"k", "message"=>{"id"=>"e8ccda9a-7452-4180-b89b-593ee28c4ac0", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 0], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms | Allocations: 3368)
+
+
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: messages.id):
+  
+app/controllers/api/v1/messages_controller.rb:9:in `create'
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:20:11 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"bfe5d20c-4563-4fc7-aaa8-d7de3df046f5", "detail"=>"", "undefined"=>"k", "message"=>{"id"=>"bfe5d20c-4563-4fc7-aaa8-d7de3df046f5", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (2.1ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 0], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.6ms | Allocations: 3851)
+
+
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: messages.id):
+  
+app/controllers/api/v1/messages_controller.rb:9:in `create'
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:20:13 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"48fa86e9-4750-41ce-9f4b-f7a318b9e24f", "detail"=>"", "undefined"=>"l", "message"=>{"id"=>"48fa86e9-4750-41ce-9f4b-f7a318b9e24f", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 48], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 7ms (Views: 0.6ms | ActiveRecord: 1.6ms | Allocations: 2871)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 17:23:07 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 14.3ms | ActiveRecord: 0.6ms | Allocations: 1730)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:23:09 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"dc6cc907-06c3-4a60-a3e9-71ea511b3dae", "detail"=>"", "message"=>{"id"=>"dc6cc907-06c3-4a60-a3e9-71ea511b3dae", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 0], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms | Allocations: 3247)
+
+
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: messages.id):
+  
+app/controllers/api/v1/messages_controller.rb:9:in `create'
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 17:23:11 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1721)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:23:15 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"0d6d279a-2c99-43fc-8d37-01a09c0d2b2f", "detail"=>"", "message"=>{"id"=>"0d6d279a-2c99-43fc-8d37-01a09c0d2b2f", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 6], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 7ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 2849)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 17:28:45 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1761)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 17:33:58 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1761)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:34:01 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"70efce62-4b5e-4d51-b286-ad3d4b590911", "detail"=>"", "message"=>{"id"=>"70efce62-4b5e-4d51-b286-ad3d4b590911", "detail"=>""}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 70], ["detail", ""]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 7ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 2849)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:34:16 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"ffb5654b-fa0a-4fb9-882f-a9aab49d3ec1", "detail"=>":)", "message"=>{"id"=>"ffb5654b-fa0a-4fb9-882f-a9aab49d3ec1", "detail"=>":)"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 0], ["detail", ":)"]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.7ms | Allocations: 3244)
+
+
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: messages.id):
+  
+app/controllers/api/v1/messages_controller.rb:9:in `create'
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 17:34:19 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1801)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:34:22 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"202a620d-405e-4c17-9b00-af53ed9a4f7b", "detail"=>":)", "message"=>{"id"=>"202a620d-405e-4c17-9b00-af53ed9a4f7b", "detail"=>":)"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 202], ["detail", ":)"]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 7ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 2849)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 17:36:46 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1841)
+
+
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 17:36:52 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1841)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:37:04 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"5d089fb1-a3dc-4e08-bc0f-b3a7b1e92d5c", "detail"=>":)", "message"=>{"id"=>"5d089fb1-a3dc-4e08-bc0f-b3a7b1e92d5c", "detail"=>":)"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 5], ["detail", ":)"]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms | Allocations: 3244)
+
+
+  
+ActiveRecord::RecordNotUnique (SQLite3::ConstraintException: UNIQUE constraint failed: messages.id):
+  
+app/controllers/api/v1/messages_controller.rb:9:in `create'
+Started GET "/api/v1/messages" for ::1 at 2021-06-30 17:37:09 -0400
+Processing by Api::V1::MessagesController#index as */*
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1841)
+
+
+Started POST "/api/v1/messages" for ::1 at 2021-06-30 17:37:14 -0400
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"id"=>"26f5ebd0-35b9-4243-ab14-f251eb5491e9", "detail"=>":)", "message"=>{"id"=>"26f5ebd0-35b9-4243-ab14-f251eb5491e9", "detail"=>":)"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("id", "detail") VALUES (?, ?)[0m  [["id", 26], ["detail", ":)"]]
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:9:in `create'
+Completed 201 Created in 7ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 2848)
+
+
