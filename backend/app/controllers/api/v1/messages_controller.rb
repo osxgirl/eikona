@@ -1,8 +1,9 @@
 class Api::V1::MessagesController < Api::V1::BaseController
      before_action :set_message, only: [:show, :edit, :update, :destroy]
 
-     def index
-          respond_with Message.all
+        def index
+           messages = Message.all
+           render json: messages
         end
 
         def create
