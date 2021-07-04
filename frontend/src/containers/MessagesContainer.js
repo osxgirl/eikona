@@ -1,53 +1,71 @@
 import MessageCard from '../components/MessageCard'
 import React from 'react'
 import MessageForm from '../components/MessageForm'
-import {connect} from 'react-redux'
-import {fetchMessages}  from '../actions/messageActions'
+
+
+const url ="http://localhost:3000/api/v1/messages"
 
 class MessagesContainer extends React.Component{
    
+    state = {
+        messages: [],
+        search: ""
+    }
+
     addMessage = (messageData) => {
-      this.setState((prevState, prevProps ) => {
+        this.setState((prevState, prevProps ) => {
             return {
                 messages: [...prevState.messages, messageData]
             }
         })
     }
+
     makeMessageCards(){
-        return this.props.messages.map(message => <MessageCard message={message} id={message.id} detail={message.detail} />)
-    }
-    
-    componentDidMount(){
-        console.log("A")
-        this.props.fetchMessages()
-        console.log("D")
-    }
-
-    render()
-        {
-          return(
-            <div id="message-container">
-              <div>
-                <MessageForm addMessage={this.addMessage}/>
-                <br></br>
-               </div>
-               {this.props.loading ? <h1>LOADING....</h1> : this.makeMessageCards()}
-            </div>
-          )
+        let displayedMessages = this.state.messages
+        console.log(this.state.search)
+        if(this.state.search){
+            displayedMessages = this.state.messages.filter((message) =>
+            message.name.toLowerCase().includes(this.state.search.toLowerCase()))
         }
-}
 
-const mapStateToProps = (state) => {
+        return displayedMessages.map(message => <MessageCard increaseLikes={this.increaseLikes} message={message} />)
+       
+    }
+
+    componentDidMount(){
+      
+      fetch(url)
+      .then(res => res.json())
+      .then(json => {
+          console.log(json)
+         
+         this.setState({
+             messages: json
+         })
+      })
+    }
+
+    handleInputChange = (e) => {
+        const search = e.target.value
+        this.setState({search: search})
+    }
+
+
+    render(){
+        return(
+            <div id="message-container">
         
-    return {
-     loading: state.loading
+                <div>
+                    <MessageForm addMessage={this.addMessage}/>
+                    <br></br>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search for a message..." onChange={this.handleInputChange}/>
+                </div>
+               {this.makeMessageCards()}
+            </div>
+        )
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        fetchMessages: () => dispatch(fetchMessages())
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(MessagesContainer)
+export default MessagesContainer

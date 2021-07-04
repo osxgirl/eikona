@@ -1,4 +1,4 @@
-const messageReducer = (state = { messages: [], loading: true }, action) => {
+const messageReducer = (state = { messages: [], loading: false }, action) => {
     switch(action.type){
         case "GOT_MESSAGES":
             console.log("E")
@@ -6,7 +6,7 @@ const messageReducer = (state = { messages: [], loading: true }, action) => {
         case "ADDED_MESSAGES":
             return { ...state, messages: [...state.messages, action.payload] }
         case "LOADING":
-            return  {...state, loading: true }
+            return  {...state, loading: false }
         default:
             return state
     }

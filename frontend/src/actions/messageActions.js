@@ -6,18 +6,19 @@ export const delMessages = (messages) => ({type: "REMOVE_MESSAGE", payload: mess
 export const patMessage = (message) => ({ type: "UPDATED_MESSAGE", payload: message })
 
 export const fetchMessages = () => {
-    console.log("B")
     return (dispatch) => {
-        dispatch({type: "LOADING"})
-        fetch(url)
-        .then(res => res.json())
-        .then(json => {
-            dispatch(setMessages(json))
-            console.log("F")
-        })
-        console.log("C")
+            dispatch({type: "LOADING"})
+            fetch(url)
+            .then(res => res.json())
+            .then(json => {
+                // instead of setState, we need to dispatch an action
+                dispatch(setMessages(json)) // dispatching an action to the reducer
+                console.log("F")
+            })
+            console.log("C")
+            // responsible for dispatching the setToys action
+        }
     }
-}
 
 export const createMessage = (message) => {
    return (dispatch) => {
@@ -33,11 +34,9 @@ export const createMessage = (message) => {
         .then(res => res.json())
         .then(json => {
             dispatch(addMessage(json))
-            console.log("F")
         })
     }
 }
-
 export const patchMessage = (message) => {
    return (dispatch) => {
         const configObj = {
