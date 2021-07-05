@@ -5,6 +5,8 @@ const messageReducer = (state = { messages: [], loading: false }, action) => {
             return {...state, messages: action.payload, loading: true}
         case "ADDED_MESSAGES":
             return { ...state, messages: [...state.messages, action.payload] }
+        case "REMOVE_MESSAGE":
+            return { ...state, messages: [...state.messages, action.payload] }
         case "LOADING":
             return  {...state, loading: false }
         default:

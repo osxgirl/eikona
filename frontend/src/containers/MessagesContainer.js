@@ -20,15 +20,12 @@ class MessagesContainer extends React.Component{
         })
     }
 
+
     makeMessageCards(){
         let displayedMessages = this.state.messages
         console.log(this.state.search)
-        if(this.state.search){
-            displayedMessages = this.state.messages.filter((message) =>
-            message.name.toLowerCase().includes(this.state.search.toLowerCase()))
-        }
-
-        return displayedMessages.map(message => <MessageCard increaseLikes={this.increaseLikes} message={message} />)
+       
+        return displayedMessages.map(message => <MessageCard message={message} />)
        
     }
 
@@ -59,9 +56,7 @@ class MessagesContainer extends React.Component{
                     <MessageForm addMessage={this.addMessage}/>
                     <br></br>
                 </div>
-                <div>
-                    <input type="text" placeholder="Search for a message..." onChange={this.handleInputChange}/>
-                </div>
+                
                {this.makeMessageCards()}
             </div>
         )
