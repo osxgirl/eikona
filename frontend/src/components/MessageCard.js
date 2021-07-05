@@ -4,7 +4,9 @@ function MessageCard(props){
 
     return(
         <div className="card" id={`message-${props.id}`}>
-           <h2>{props.detail}</h2>
+           <ul>
+            <li>{props.message.detail}</li>
+          </ul>
             
         </div>
     )
