@@ -98,5 +98,7 @@ button {
 
 ul {
     list-style: none;
+    font-size: 25px;
+    text-align: center;
 }
 
