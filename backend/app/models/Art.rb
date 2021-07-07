@@ -1,0 +1,2 @@
+class PixelArt < ApplicationRecord
+end
