@@ -2,7 +2,6 @@ import React from 'react'
 import uuid from 'uuid';
 import {connect} from 'react-redux'
 import {createMessage} from '../actions/messageActions'
-import Emoji from 'a11y-react-emoji'
 
 
 class MessageForm extends React.Component{
@@ -38,7 +37,7 @@ class MessageForm extends React.Component{
         return(
            <div>
             <form onSubmit={this.handleSubmit}>
-                <label><Emoji symbol="💬" label="messages" />
+                <label>
                <input detail='detail' type="text" placeholder=":)" value={this.state.detail}  onChange={this.updateDetail.bind(this)} />
                </label>
                <input type="submit" value="Add Message" />
