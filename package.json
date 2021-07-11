@@ -1,10 +1,6 @@
 {
   "name": "eikona",
   "version": "0.1.0",
-  "engines": {
-      "node: "14.8.0"
-   }
-  }
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -37,6 +33,10 @@
       "react-app/jest"
     ]
   },
+  "engines":{
+      "node": "14.x"
+      },
+  }
   "browserslist": {
     "production": [
       ">0.2%",
