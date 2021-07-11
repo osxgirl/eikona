@@ -8,7 +8,7 @@ import Home from './components/Home'
 import Matrix from './components/Matrix.js'
 import MessagesContainer from './containers/MessagesContainer'
 import GifListContainer from './containers/GifListContainer'
-import Heart from './components/Heart'
+import Heart from "react-heart"
 
 class App extends Component {
 
@@ -26,7 +26,7 @@ class App extends Component {
           </React.Fragment>
         </Router>
 
-        <h2><Heart /></h2>
+        <p><Heart /></p>
       </div>
     );
   }
