@@ -26,7 +26,7 @@ class App extends Component {
           </React.Fragment>
         </Router>
 
-        <p><Heart /></p>
+        <div><Heart /></div>
       </div>
     );
   }
