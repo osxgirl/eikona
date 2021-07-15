@@ -9,6 +9,8 @@ import Matrix from './components/Matrix.js'
 import MessagesContainer from './containers/MessagesContainer'
 import GifListContainer from './containers/GifListContainer'
 import Heart from "react-heart"
+import Counter from './components/Counter'
+
 
 class App extends Component {
 
@@ -23,6 +25,7 @@ class App extends Component {
           <Route exact path="/drawing" component={Matrix} />
           <Route exact path="/giphy" component={GifListContainer} />
           <Route exact path="/heart" component={Heart} />
+          <Route exact path="/counter" component={Counter} />
           </React.Fragment>
         </Router>
 
