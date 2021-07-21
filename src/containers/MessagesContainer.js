@@ -3,7 +3,7 @@ import React from 'react'
 import MessageForm from '../components/MessageForm'
 
 
-const url ="https://ekona.herokuapp.com/messages"
+const url ="http://localhost:3000/api/v1/messages"
 
 class MessagesContainer extends React.Component{
    

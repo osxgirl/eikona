@@ -20,9 +20,9 @@ class Counter extends Component {
     return (
       <section className="Counter" style={{ background: color }}>
         <h1>{time}</h1>
-        <button onClick={this.stopClock}>Stop</button>
-        <aside className="mountText">Mounted</aside>
-        <small onClick={this.handleClose}>X</small>
+        <button onClick={this.stopClock}>🛑</button>
+        <aside className="mountText"></aside>
+        <small onClick={this.handleClose}></small>
       </section>
     );
   }

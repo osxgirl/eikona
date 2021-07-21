@@ -8,8 +8,9 @@ import Home from './components/Home'
 import Matrix from './components/Matrix.js'
 import MessagesContainer from './containers/MessagesContainer'
 import GifListContainer from './containers/GifListContainer'
-import Heart from "react-heart"
+import Heart from "react-animated-buttons"
 import Counter from './components/Counter'
+import AnimatedButton from 'react-animated-buttons';
 
 
 class App extends Component {
@@ -29,7 +30,10 @@ class App extends Component {
           </React.Fragment>
         </Router>
 
-        <div><Heart /></div>
+            <div style={{margin: '0rem 0.2rem', display: 'inline-block'}}>
+                <AnimatedButton buttonStyle={{padding: '0.5rem'}} color="#f1f2f6" buttonRadius="10%">❤️</AnimatedButton>
+            </div>
+
       </div>
     );
   }
